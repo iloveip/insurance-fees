@@ -17,9 +17,12 @@
     "test:coverage": "nwb test --coverage",
     "test:watch": "nwb test --server"
   },
-  "dependencies": {
+  "dependencies": {},
+  "peerDependencies": {
+    "moment": "^2.29.1"
   },
   "devDependencies": {
+    "moment": "^2.29.1",
     "nwb": "0.25.x"
   },
   "author": "",
