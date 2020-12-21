@@ -1,16 +1,14 @@
-# fees
+# Калькулятор для расчёта страховых взносов
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+Калькулятор можно использовать для расчёта страховых взносов ИП с 2014 по 2023 гг.
 
-Describe fees here.
+`Fees.getPFRFixedFee(year, period, covid)` возвращает страховые взносы на ОПС.
+`Fees.getFFOMSFee(year, period)` возвращает страховые взносы на ОМС.
+`(Fees.getPFROnePercentFee(year, period, amount, covid)` возвращает дополнительный 1 % на ОПС.
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+## Параметры
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
-
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+`year` — год для расчёта страховых взносов.
+`period` — массив с начальной и конечной датой для расчёта взносов в формате ДД.ММ.ГГГГ. Например, `["01.01.2020", "31.12.2020"]`.
+`amount` — сумма доходов за год для расчёта дополнительного 1 % на ОПС.
+`covid` — если бизнес относится к одной из [пострадавших отраслей](https://www.nalog.ru/rn77/business-support-2020/9704514/) (необязательный).
