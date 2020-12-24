@@ -1,6 +1,6 @@
 {
-  "name": "@iloveip/insurance-fees",
-  "version": "0.0.1",
+  "name": "insurance-fees",
+  "version": "0.0.2",
   "description": "Insurance fees calculator",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -25,13 +25,10 @@
     "moment": "^2.29.1",
     "nwb": "0.25.x"
   },
-  "author": "Svetlana Malakhova <hello@iloveip.ru>",
+  "author": "Svetlana Malakhova",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/iloveip/insurance-fees.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
