@@ -120,13 +120,15 @@ export default class Fees {
 
     if (year <= 2017) {
       fees = this.getMROT(year) * this.PFRMonthlyFixedFeesRate * 12
-    } else {
+    } else if (year == 2020) {
       // Update for COVID in 2020
       if (covid === true) {
         fees = this.getPFRFixedFees(year) - 12130
       } else {
         fees = this.getPFRFixedFees(year)
       }
+    } else {
+      fees = this.getPFRFixedFees(year)
     }
 
     if (period && period.length) {

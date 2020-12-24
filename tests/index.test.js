@@ -18,4 +18,10 @@ describe('Module tests', () => {
   it('OPS 1 % 01.03.2020–31.12.2020 COVID 200m 242652.33', () => {
     expect(Fees.getPFROnePercentFee(2020, ["01.03.2020", "31.12.2020"], 200000000, true)).toEqual(242652.33)
   })
+  it('OPS 01.01.2019–31.12.2019 29354', () => {
+    expect(Fees.getPFRFixedFee(2019, ["01.01.2019", "31.12.2019"])).toEqual(29354)
+  })
+  it('OPS 01.01.2019–31.12.2019 COVID 29354', () => {
+    expect(Fees.getPFRFixedFee(2019, ["01.01.2019", "31.12.2019"], true)).toEqual(29354)
+  })
 })
