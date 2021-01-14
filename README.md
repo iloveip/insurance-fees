@@ -6,7 +6,7 @@
 
 `Fees.getFFOMSFee(year, period)` возвращает страховые взносы на ОМС.
 
-`(Fees.getPFROnePercentFee(year, period, amount, covid)` возвращает дополнительный 1 % на ОПС.
+`Fees.getPFROnePercentFee(year, period, amount, covid)` возвращает дополнительный 1 % на ОПС.
 
 ## Параметры
 
